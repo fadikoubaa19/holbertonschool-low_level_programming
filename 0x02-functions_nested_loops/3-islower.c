@@ -1,7 +1,7 @@
 #include "holberton.h"
 int _islower(int c)
   /**
- *islower(int c)  - check the code for Holberton School students.
+ *islower) - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
