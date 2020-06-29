@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _strchr - check the code for Holberton School students.
+*@s: var.
+*@c:var.
  * Return: Always 0.
  */
 char *_strchr(char *s, char c)
@@ -12,9 +13,9 @@ char *_strchr(char *s, char c)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == c) 
+		if (s[i] == c)
 		{
-			return (&s[i]) ;		
+			return (&s[i]);
 		}
 		i++;
 	}
