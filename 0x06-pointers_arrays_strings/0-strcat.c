@@ -2,8 +2,8 @@
 
 /**
  *_strcat - check the code for Holberton School students.
- *@dest: fjdkfjXSXCdf
- *@src: fdflkdfd
+ *@dest: var.
+ *@src: var.
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
