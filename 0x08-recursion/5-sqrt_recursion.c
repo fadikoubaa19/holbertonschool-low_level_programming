@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _sqrt - check the code for Holberton School students.
- *@i: var.	
+ *@i: var.
  *@n: var.
  * Return: Always 0.
  */
