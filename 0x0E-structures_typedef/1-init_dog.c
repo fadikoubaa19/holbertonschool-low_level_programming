@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
  *init_dog - gilmour
- *@a:var.
+ *@d:var.
  *@name: the  name
  *@age: the age
  *@owner:the owner
