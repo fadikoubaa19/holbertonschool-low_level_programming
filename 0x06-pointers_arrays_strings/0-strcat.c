@@ -1,25 +1,22 @@
-#include "holberton.h"
-
+#include"holberton.h"
 /**
- *_strcat - check the code for Holberton School students.
- *@dest: var.
- *@src: var.
- * Return: Always 0.
- */
+ * _strcat - function that concatinates two strings.
+ * @dest: pointer
+ * @src: pointer
+ * Return: 0
+*/
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int y = 0;
-
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	while (src[y] != '\0')
-	{
-		dest[i] = src[y];
-		i++;
-		y++;
-	}
-	return (dest);
+int n, b;
+b = 0;
+while (dest[b] != '\0')
+b++;
+n = 0;
+while (src[n] != '\0')
+{
+*(dest + b) = *(src + n);
+n++;
+b++;
+}
+return (dest);
 }
