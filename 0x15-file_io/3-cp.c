@@ -4,7 +4,7 @@
  * errorMsg - Print error message
  * @exitCode: var
  * @msg: var
- * @fileName: var
+ * @myfile: var
  */
 void errorMsg(int exitCode, const char *msg, const char *myfile)
 {
@@ -16,7 +16,7 @@ void errorMsg(int exitCode, const char *msg, const char *myfile)
  * main - entry point
  * @argc: var
  * @argv: var
- * Return: 0 
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
