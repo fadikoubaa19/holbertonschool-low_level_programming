@@ -1,60 +1,61 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * main - a programme to copy
- * @argc: integer number of arguments
- * @argv: array of strings containing the arguments
- * Return: int
+ * errorMsg - Print error message
+ * @exitCode: exit code to stop
+ * @msg: the error message to be printed
+ * @fileName: the name of the file
+ */
+void errorMsg(int exitCode, const char *msg, const char *fileName)
+{
+	dprintf(STDERR_FILENO, "%s %s\n", msg, fileName);
+	exit(exitCode);
+}
+
+/**
+ * main - entry point
+ * @argc: argument count
+ * @argv: array of argument tokens
+ * Return: 0 on success
  */
 int main(int argc, char **argv)
 {
-int f[2] = {0, 0}, c = 0;
-ssize_t a = 0, b = 0;
-char buffer[BUFFER_SIZE];
-if (argc != 3)
-{
-dprintf(STDERR_FILENO, ERR97);
-exit(97);
-}
-f[0] = open(argv[1], O_RDONLY);
-if (f[0] == -1)
-{
-dprintf(STDERR_FILENO, ERR98, argv[1]);
-exit(98);
-}
-f[1] = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-if (f[1] == -1)
-{
-dprintf(STDERR_FILENO, ERR99, argv[2]);
-exit(99);
-}
-do {
-a = read(f[0], buffer, BUFFER_SIZE);
-if (a == -1)
-{
-dprintf(STDERR_FILENO, ERR98, argv[1]);
-exit(98);
-}
-if (a)
-{
-b = write(f[1], buffer, a);
-if (b != a)
-{
-dprintf(STDERR_FILENO, ERR99, argv[2]);
-exit(99);
-}
-}
-} while (a);
-c = close(f[0]);
-if (c == -1)
-{
-dprintf(STDERR_FILENO, ERR100, f[0]);
-exit(100);
-}
-c = close(f[1]);
-if (c == -1)
-{
-dprintf(STDERR_FILENO, ERR100, f[1]);
-exit(100);
-}
-return (0);
+	int fd_from, fd_to, rd, wr, bz = 1024, cl_from, cl_to;
+	char buf[1024];
+
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	fd_from = open(argv[1], O_RDONLY);
+
+	if (fd_from == -1)
+		errorMsg(98, "Error: Can't read from file", argv[1]);
+
+	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+
+	if (fd_to == -1)
+		errorMsg(99, "Error: Can't write to", argv[2]);
+
+	for (rd = read(fd_from, buf, bz); rd > 0; rd = read(fd_from, buf, bz))
+	{
+		wr = write(fd_to, buf, rd);
+		if (wr == -1)
+			errorMsg(99, "Error: Can't write to", argv[2]);
+	}
+	if (rd == -1)
+		errorMsg(98, "Error: Can't read from file", argv[1]);
+
+	cl_from = close(fd_from);
+
+	if (cl_from == -1)
+		errorMsg(100, "Error: Can't close fd", argv[1]);
+
+	cl_to = close(fd_to);
+
+	if (cl_to == -1)
+		errorMsg(100, "Error: Can't close fd", argv[2]);
+
+	return (0);
 }
