@@ -2,25 +2,25 @@
 #include <stdio.h>
 /**
  * errorMsg - Print error message
- * @exitCode: exit code to stop
- * @msg: the error message to be printed
- * @fileName: the name of the file
+ * @exitCode: var
+ * @msg: var
+ * @fileName: var
  */
-void errorMsg(int exitCode, const char *msg, const char *fileName)
+void errorMsg(int exitCode, const char *msg, const char *myfile)
 {
-	dprintf(STDERR_FILENO, "%s %s\n", msg, fileName);
+	dprintf(STDERR_FILENO, "%s %s\n", msg, myfile);
 	exit(exitCode);
 }
 
 /**
  * main - entry point
- * @argc: argument count
- * @argv: array of argument tokens
- * Return: 0 on success
+ * @argc: var
+ * @argv: var
+ * Return: 0 
  */
 int main(int argc, char **argv)
 {
-	int fd_from, fd_to, rd, wr, bz = 1024, cl_from, cl_to;
+	int fd_from, fd_to, rd, wr, rf = 1024, cl_from, cl_to;
 	char buf[1024];
 
 	if (argc != 3)
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 	if (fd_to == -1)
 		errorMsg(99, "Error: Can't write to", argv[2]);
 
-	for (rd = read(fd_from, buf, bz); rd > 0; rd = read(fd_from, buf, bz))
+	for (rd = read(fd_from, buf, rf); rd > 0; rd = read(fd_from, buf, rf))
 	{
 		wr = write(fd_to, buf, rd);
 		if (wr == -1)
