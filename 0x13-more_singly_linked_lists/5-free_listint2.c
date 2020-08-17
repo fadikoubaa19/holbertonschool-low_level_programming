@@ -3,17 +3,21 @@
 /**
  * free_listint2 - yea hhh §§.
  * @head: varrrrrr
- * Return: fafaa
+ * Return:0
  */
 void free_listint2(listint_t **head)
 {
-listint_t *s;
+listint_t *s, *m;
 if (head == NULL)
-return;
-while (*head != NULL)
 {
-next = (*head)->s;
-free(*head);
-*head = s;
+return;
 }
+m = *head;
+while (m != NULL)
+{
+s = m;
+m = m->next;
+free(s);
+}
+*head = NULL;
 }
