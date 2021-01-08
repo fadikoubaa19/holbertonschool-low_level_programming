@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *int _isalpha - check the code for Holberton School students.
+ *int _isalpha - check the code for Holberton students.
  *
  * Return: Always 0.
  */
