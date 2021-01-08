@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _isalpha - checks alpha
+* _isalpha - checks alphabet
 *
 * @c: variable
 *
