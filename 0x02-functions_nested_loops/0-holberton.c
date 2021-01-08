@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: Prints Holberton with _putchar
+ * Description: Prints Holberton with _putch
  *
  * Return: always 0
  */
