@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - for holberton school
+ * get_dnodeint_at_index - for holberton school students
  *@head: var
  *@index: var
  * Return: Always EXIT_SUCCESS.
