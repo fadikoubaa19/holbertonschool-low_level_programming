@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * dlistint_len - for holbertonschool
+ * dlistint_len - for holbertonschool s
  * @h:var
  *Return: Always EXIT_SUCCESS.
  */
