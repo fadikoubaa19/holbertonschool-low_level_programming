@@ -24,4 +24,5 @@ int main(void)
     print_dlistint(head);
     free_dlistint(head);
     head = NULL;
-    return (EXIT_SUCCESS);}
+    return (EXIT_SUCCESS);
+}
