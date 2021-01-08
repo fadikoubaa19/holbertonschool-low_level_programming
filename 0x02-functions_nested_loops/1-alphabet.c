@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-*print_alphabet - check the code for Holberton 
+*print_alphabet - check the code for Holberton students
 *
 * Return: Always 0.
 */
