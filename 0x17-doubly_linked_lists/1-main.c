@@ -30,4 +30,5 @@ int main(void)
     n = dlistint_len(head);
     printf("-> %lu elements\n", n);
     free(new);
-    return (EXIT_SUCCESS);}
+    return (EXIT_SUCCESS);
+}
