@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_last_digit - check the code.
+ * print_last_digit - check the code for Holberton.
  *@x:var
  * Return: Always 0.
  */
