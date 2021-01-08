@@ -60,7 +60,7 @@ void table(int n)
 /**
 *print_times_table - 0
 *@n: integer
-*Return: nothing
+*Return: always 0
 */
 void print_times_table(int n)
 {
