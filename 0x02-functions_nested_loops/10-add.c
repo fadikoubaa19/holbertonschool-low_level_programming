@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * add - check the code .
+ * add - check the code for holb .
  *@a: var
  *@b: var
  * Return: Always 0.
