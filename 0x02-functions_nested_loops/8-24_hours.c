@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* jack_bauer - check the code.
+* jack_bauer - check the code for holbertonschool.
 *
 * Return: Always 0.
 */
