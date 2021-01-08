@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*_islower - check the code for Holberton School students.
+*_islower - check the code for Holberton students.
 *
 *@c: var
 *
