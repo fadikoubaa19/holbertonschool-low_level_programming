@@ -1,8 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * pop_listint - fafafa
- * @head: fafafa
+ * pop_listint - for holbertonschool
+ * @head: var
  * Return: var.
  */
 int pop_listint(listint_t **head)
