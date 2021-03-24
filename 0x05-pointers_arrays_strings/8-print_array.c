@@ -4,7 +4,7 @@
 /**
  * print_array - print_array  a string.
  * @a: pointer to define the string
- * @n: integer
+ * @n: integer 
 */
 
 void print_array(int *a, int n)
