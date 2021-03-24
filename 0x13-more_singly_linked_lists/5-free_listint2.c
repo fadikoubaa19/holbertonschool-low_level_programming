@@ -1,8 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * free_listint2 - yea hhh §§.
- * @head: varrrrrr
+ * free_listint2 - for holbertonschool.
+ * @head: var
  * Return:0
  */
 void free_listint2(listint_t **head)
