@@ -5,7 +5,7 @@
 
 /**
  * free_listint - for holbertonschool
- *@head: var
+ *@head: var 
  * Return : 0
  */
 void free_listint(listint_t *head)
