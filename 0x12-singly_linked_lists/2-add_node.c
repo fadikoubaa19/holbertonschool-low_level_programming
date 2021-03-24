@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *add_node - gooog
+ *add_node - for holb
  *@head:var
  *@str:var
  *Return: always zero
