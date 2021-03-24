@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* swap_int - check the code for Holberton School students.
+* swap_int - check the code for Holberton School students. 
 *@a:var.
 *@b:var.
 * Return: Always 0.
