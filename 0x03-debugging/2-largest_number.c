@@ -5,7 +5,7 @@
  * @a: int
  * @b: sec int
  * @c: last  integer
- * Return: largest number
+ * Return: largest numbers
  */
 
 int largest_number(int a, int b, int c)
