@@ -8,7 +8,7 @@
  *
  * Return: 0
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, .. .)
 {
 unsigned int b = 0;
 char *s;
