@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Last digits
- * Return: Always 0 (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
