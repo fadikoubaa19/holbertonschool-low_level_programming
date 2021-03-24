@@ -2,7 +2,7 @@
 /**
 *_isdigit - check the code for Holberton School students.
 *
-*@c: var
+*@c:  var
 *
 * Return: Always 0.
 */
