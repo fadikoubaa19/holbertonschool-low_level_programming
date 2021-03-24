@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* main - posi or negative
+* main - posit or negative
 * Return: 0
 */
 
