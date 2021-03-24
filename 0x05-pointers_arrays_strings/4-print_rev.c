@@ -3,7 +3,7 @@
 *print_rev - 0
 *@s: char
 *
-*/
+*/ 
 void print_rev(char *s)
 {
 	char *f;
