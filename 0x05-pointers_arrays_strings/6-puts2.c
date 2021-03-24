@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * puts2 - puts2  a string.
+ * puts2 - puts2  a string. 
  * @str: char to define the string
 */
 
