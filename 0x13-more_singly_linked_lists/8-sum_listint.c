@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * sum_listint - fafafa
+ * sum_listint - for holbertonschool
  * @head: var
- * Return: fafa
+ * Return: always return 0
  */
 int sum_listint(listint_t *head)
 {
