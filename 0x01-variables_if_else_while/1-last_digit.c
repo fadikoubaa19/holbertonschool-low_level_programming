@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * print size of variables
- * Return: Always 0 (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
