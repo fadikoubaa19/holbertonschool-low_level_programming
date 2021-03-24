@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * reverse_listint - fafafa
+ * reverse_listint - for holbertonschool
  * @head: varr
- * Return: fafafa
+ * Return: head
  */
 listint_t *reverse_listint(listint_t **head)
 {
