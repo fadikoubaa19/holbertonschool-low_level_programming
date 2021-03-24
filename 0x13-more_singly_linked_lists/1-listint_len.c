@@ -3,7 +3,7 @@
 /**
  * listint_len -  holbertonschool blabla..
  * @h: var
- * Return: fafafa
+ * Return: return s
  */
 size_t  listint_len(const listint_t *h)
 {
