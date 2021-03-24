@@ -4,7 +4,7 @@
  * errorMsg - Print error message
  * @exitCode: var
  * @msg: var
- * @myfile: var
+ * @myfile: var 
  */
 void errorMsg(int exitCode, const char *msg, const char *myfile)
 {
