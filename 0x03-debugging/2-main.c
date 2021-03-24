@@ -3,7 +3,7 @@
 
 /**
  * main - prints the largest of 3 integers
- * Return: 0
+ * Return: 0 always
  */
 
 int main(void)
