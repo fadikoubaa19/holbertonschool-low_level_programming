@@ -2,7 +2,7 @@
 /**
  * more_numbers - function that prints 10 times the numbers
  * void
- * Return: void
+ * Return: void 
  */
 void more_numbers(void)
 {
