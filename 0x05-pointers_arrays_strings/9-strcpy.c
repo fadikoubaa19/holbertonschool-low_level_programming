@@ -5,7 +5,7 @@
  * _strcpy - _strcpy  function.
  * @dest: char to define the string
  * @src: char to define the string
- * Return: dest.
+ * Return: dest. 
  */
 
 char *_strcpy(char *dest, char *src)
