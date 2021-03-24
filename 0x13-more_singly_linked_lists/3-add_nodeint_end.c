@@ -1,13 +1,13 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * add_nodeint_end - hohoho.
+ * add_nodeint_end  - for holbertonschool
  * @head: var
  * @n: var
- * Return: fafafa
+ * Return: return s
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
-{
+{ 
 listint_t *s;
 listint_t *a;
 if (head == NULL)
