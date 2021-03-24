@@ -3,7 +3,7 @@
 *clear_bit - for holbertonschool
 *@n: varr
 *@index: var
-*Return: 1  -1
+*Return: 1  -1 
 */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
